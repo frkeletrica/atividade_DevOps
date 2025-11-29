@@ -13,9 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Exibir evento de disparo
-        run: echo "🚀 Workflow iniciado pelo evento: ${{ github.event_name }}"
-
       - name: Verificar status do servidor
         run: |
           echo "🕒 Iniciando tarefas - $(date)"
