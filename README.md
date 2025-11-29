@@ -1,2 +1,6 @@
 # atividade_DevOps
-Atividade DevOps
+## Grupo:
+- Franklin Andrade
+- Haline Araújo
+- João Avelar
+
