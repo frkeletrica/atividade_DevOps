@@ -1,0 +1,20 @@
+name: 'Desafio 5 - Agendamentos com Cron'
+
+on:
+  schedule:
+    # Todos os dias às 06:50 (UTC)
+    - cron: '50 6 * * *'
+
+    # A cada 30 minutos entre 08:00 e 18:00 (UTC)
+    - cron: '0,30 8-18 * * *'
+
+jobs:
+  executar-testes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Executar testes
+        run: mvn clean test
+
+      - name: Gerar relatório
+        run: echo "📄 Relatório gerado às $(date -u)"

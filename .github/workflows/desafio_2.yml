@@ -1,4 +1,4 @@
-name: 'Desafio 2'
+name: 'Desafio 2 - Gatilhos Básicos'
 
 on:
   push:
